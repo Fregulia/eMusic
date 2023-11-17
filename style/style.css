@@ -1,4 +1,6 @@
 /* AJUSTES */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Varela+Round&display=swap');
+
 :root {
     --azul_claro: #77acd2;
     --azul_medio: #4699dd;
@@ -7,7 +9,6 @@
     --rosa: #f494b6;
     --roxa: #9670e0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Varela+Round&display=swap');
 
 
 /* UNIVERSAL */
@@ -27,7 +28,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 2% 3% 0 3%;
-    padding: 3em;
+    padding: 3em 0;
     color: white;
     border: 2px solid;
     border-radius: 20px;
@@ -43,7 +44,7 @@ nav ul {
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Adição: para criar uma lista flexível (horizontal) */
+    justify-content: space-between;
   }
 nav a {
     font-family: Arial, Helvetica, sans-serif;
@@ -62,6 +63,7 @@ nav a {
     background-color: rgba(0, 0, 0, 0.705);
 }
 
+
 /* MAIN */
 main{
     min-width: 0.8vw;
@@ -73,7 +75,8 @@ main{
 
 /* RODAPÉ */
 footer{
-    min-width: 0.8vw;
+    margin: 0 auto;
+    min-width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,6 +174,7 @@ table tbody tr td a:hover{
 }
 
 
+
 /* PAGINA 2 */
 #pagina__2{
     background-color: rgba(0, 0, 0, 0.705);
@@ -186,6 +190,9 @@ table tbody tr td a:hover{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+ol{
+    list-style-type: decimal;
 }
 .par{
     font-size: 24px;
@@ -211,4 +218,106 @@ table tbody tr td a:hover{
 /* PAGINA 3 */
 #pagina__3{
     background-color: rgba(0, 0, 0, 0.705);
+}
+#main__4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo__pagina__4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.formulario{
+    background-color: #203d88;
+    border-radius: 20px;
+    padding-top: 2%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+form input{
+    margin-bottom: 2%;
+    padding: 1% 0 1% 2%;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 0 0 15px 15px;
+}
+
+.titulos{
+    background-color: black;
+    font-size: 24px;
+    border-radius: 15px 15px 0 0;
+    padding: 1% 0;
+}
+textarea{
+    font-size: 20px;
+    padding: 1% 0 1% 2%;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 2%;
+}
+select{
+    padding: 2% 0;
+    border-radius: 0 0 15px 15px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 2%;
+}
+#escolha{
+    font-size: 24px;
+    border-radius: 15px 15px 0 0;
+    padding: 1% 0;
+}
+#botoes__escolha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+#botao__sim{
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+}
+#botao__nao{
+    display: flex;
+    align-items: center;
+}
+#sim{
+    width: 20px; /* Set the width as desired */
+    height: 20px; /* Set the height as desired */
+    background-color: #3498db; /* Set the background color as desired */
+    border-radius: 50%; /* Make it round */
+}
+#nao{
+    width: 20px; /* Set the width as desired */
+    height: 20px; /* Set the height as desired */
+    background-color: #3498db; /* Set the background color as desired */
+    border-radius: 50%; /* Make it round */
+}
+.escolha_feita{
+ margin-left: 5%;
+}
+.botao__enviar{
+    background-color: white;
+    border-radius: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    transition: 0.5s;
+}
+.botao__enviar:hover{
+    background-color: black;
+    color: white;
 }
